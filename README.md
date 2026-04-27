@@ -1,73 +1,20 @@
-# React + TypeScript + Vite
+# Yangın Kriminal UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, **yanginkriminal.com** web sitesinin modern web teknolojileriyle geliştirilmiş kullanıcı arayüzü (UI) katmanıdır. Güçlü bir tip güvenliği ve performans için **React** ve **TypeScript** kullanılarak inşa edilmiştir.
 
-Currently, two official plugins are available:
+## 🚀 Teknolojiler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Proje geliştirme sürecinde aşağıdaki modern araçlar kullanılmaktadır:
 
-## React Compiler
+* **React 18** - Kullanıcı arayüzü kütüphanesi.
+* **TypeScript** - Statik tip kontrolü ile güvenli kod yazımı.
+* **Vite** - Hızlı ve optimize edilmiş geliştirme ortamı.
+* **Tailwind CSS** - Hızlı ve modüler stil yönetimi. (Eğer kullanıyorsan kalsın, kullanmıyorsan silebilirsin)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Kurulum ve Çalıştırma
 
-## Expanding the ESLint configuration
+Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Projeyi klonlayın:**
+   ```bash
+   git clone [https://github.com/kullanici-adin/yangincriminalui.git](https://github.com/kullanici-adin/yangincriminalui.git)
