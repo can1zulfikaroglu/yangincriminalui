@@ -17,8 +17,9 @@ export const APP_CONFIG = {
     VERSION: '1.0.0',
   },
 
-  HOME_PAGE: {
+  HOME_PAGE_TEXT: {
     HERO_TITLE: 'Yangın Kriminal Analizinde ',
+    HERO_TITLE1 : 'Biz Kimiz?',
     HERO_TITLE2: 'Güvenilir Çözüm Ortağınız',
     HERO_SUBTITLE: 'Modern teknoloji ve uzman kadromuzla, yangınların çıkış nedenlerini aydınlatıyor, kriminal süreçlerde kesin ve hızlı raporlama sağlıyoruz.',
     SERVİCE_AREAS_TİTLE: 'Hizmet Alanlarımız',
@@ -50,36 +51,73 @@ export const APP_CONFIG = {
       { id: 10, title: "Delil Bütünlüğü ve Kriminal Uyum Analizi", desc: "Olay yeri bulguları, laboratuvar sonuçları ve tanık beyanlarının birlikte değerlendirilmesi." },
       { id: 11, title: "Risk Analizi", desc: "İTÜ Afet Koordinasyon Birimi denetimi ve onayı ile gerçekleştirilen, yapıların yangın ve afet risklerinin belirlenmesine yönelik kapsamlı teknik analiz ve değerlendirme hizmeti." },
       { id: 12, title: "Tahliye Planı Hazırlama", desc: "İTÜ Afet Koordinasyon Birimi denetimi ve onayı ile hazırlanan, acil durumlarda güvenli ve hızlı tahliyeyi sağlayacak planların oluşturulması ve uygulanabilirliğinin değerlendirilmesi." },
-      {id: 13,title: "Deprem Performans ve Yapısal Analiz", desc: "İTÜ Afet Koordinasyon Merkezi denetimi ve onayı ile binaların zemin ve taşıyıcı sistemlerinin deprem performansının incelenmesi, statik uygunluk değerlendirmesi ve olası risklerin raporlanması."},
-      {id: 14,title: "Adli Belge İnceleme", desc: "Sahte yazı, imza ve belge tespiti kapsamında gerçekleştirilen kriminal analizler ile belgelerin doğruluğunun bilimsel yöntemlerle değerlendirilmesi."}
+      { id: 13, title: "Deprem Performans ve Yapısal Analiz", desc: "İTÜ Afet Koordinasyon Merkezi denetimi ve onayı ile binaların zemin ve taşıyıcı sistemlerinin deprem performansının incelenmesi, statik uygunluk değerlendirmesi ve olası risklerin raporlanması." },
+      { id: 14, title: "Adli Belge İnceleme", desc: "Sahte yazı, imza ve belge tespiti kapsamında gerçekleştirilen kriminal analizler ile belgelerin doğruluğunun bilimsel yöntemlerle değerlendirilmesi." }
     ] as MyService[],
   },
 
-FOOTER :{
-
-  SLOGAN : 'Her detayında özen, her adımında bir amaç.',
-  RIGHTS : 'Yangın Kriminal. Tüm hakları saklıdır.'
-},
+  FOOTER: {
+    SLOGAN: 'Her detayında özen, her adımında bir amaç.',
+    RIGHTS: 'Yangın Kriminal. Tüm hakları saklıdır.'
+  },
 
   FOOTER_LİNKS: {
+    CORPORATE: [
+      { id: 101, title: 'Hakkımızda', path: '/hakkimizda' },
+      { id: 102, title: 'İletişim', path: '/iletisim' },
+      { id: 103, title: 'Blog', path: '/blog' },
+      { id: 104, title: 'Vaka Çalışmaları', path: '/vaka-calismalari' },
+    ] as NavItem[],
 
-        CORPORATE: [
-    { id: 101, title: 'Hakkımızda', path: '/hakkimizda' },
-    { id: 102, title: 'İletişim', path: '/iletisim' },
-    { id: 103, title: 'Blog', path: '/blog' },
-    { id: 104, title: 'Vaka Çalışmaları', path: '/vaka-calismalari' },
-  ] as NavItem[],
+    SERVICES: [
+      { id: 201, title: 'Danışmanlık', path: '/danismanlik' },
+      { id: 202, title: 'Analiz', path: '/analiz' },
+    ] as NavItem[],
 
-  SERVICES: [
-    { id: 201, title: 'Danışmanlık', path: '/danismanlik' },
-    { id: 202, title: 'Analiz', path: '/analiz' },
-  ] as NavItem[],
+    LEGAL: [
+      { id: 301, title: 'Gizlilik Politikası', path: '/gizlilik-politikasi' },
+      { id: 302, title: 'Kullanım Şartları', path: '/kullanim-sartlari' },
+      { id: 303, title: 'Çerez Politikası', path: '/cerez-politikasi' },
+    ] as NavItem[],
+  },
 
-  LEGAL: [
-    { id: 301, title: 'Gizlilik Politikası', path: '/gizlilik-politikasi' },
-    { id: 302, title: 'Kullanım Şartları', path: '/kullanim-sartlari' },
-    { id: 303, title: 'Çerez Politikası', path: '/cerez-politikasi' },
-  ] as NavItem[],
+ CONTACT_INFO : [
+    {
+        id: 1,
+        icon: "📍",
+        label: "Adres",
+        value: "Gümüşsuyu Mah. Sıraselviler Cad. Taner Palas apt. No:9 K2 D5 Taksim Beyoğlu İstanbul",
+    },
+    {
+        id: 2,
+        icon: "📞",
+        label: "Telefon",
+        value: "(0532) 158 74 89",
+        href: "tel:+905321587489",
+    },
+    {
+        id: 3,
+        icon: "✉️",
+        label: "E-posta",
+        value: "info@yanginpatlama.com.tr",
+        href: "mailto:info@yanginpatlama.com.tr",
+    },
+    {
+        id: 4,
+        icon: "🕐",
+        label: "Çalışma Saatleri",
+        value: "Pazartesi – Cuma: 09:00 – 18:00",
+    },
+  ],
 
-  }
+  CONTACT_PAGE_TEXT:{
+    HERO_TITLE: 'Bize Ulaşın',
+    HERO_TITLE1 : 'İletişim',
+    HERO_SUBTITLE: 'Hukuki sorularınız için bizimle iletişime geçin. En kısa sürede size dönüş yapacağız.',
+    CONTACT_INFORMATION : 'İletişim Bilgileri',
+    SENT_MESSAGE : 'Mesaj Gönderin',
+    LOCATION: 'Konum'
+  },
+
+  
 };

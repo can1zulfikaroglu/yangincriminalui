@@ -8,13 +8,8 @@ export default function Footer() {
             style={{ backgroundColor: "#1a0a08", fontFamily: "'Cormorant Garamond', Georgia, serif" }}
             className="w-full text-stone-300"
         >
-            {/* Main content */}
             <div className="max-w-7xl mx-auto px-8 pt-16 pb-10">
-
-                {/* Top Row: Logo & Nav Links */}
                 <div className="flex flex-col md:flex-row gap-12 mb-16">
-
-                    {/* Logo (Sol Üst) */}
                     <div className="md:w-1/4 flex-shrink-0">
                         <a href="/" className="inline-flex items-center gap-2.5 no-underline">
                             <img src={Logo} alt="Logo" style={{ width: 120, height: 55 }} />
@@ -23,12 +18,10 @@ export default function Footer() {
                             <p
                                 style={{ color: "#5c3d30", fontSize: "0.78rem", letterSpacing: "0.08em", fontStyle: "italic" }}
                             >
-                                Modern teknoloji ve uzman kadromuzla, yangınların çıkış nedenlerini bilimsel yöntemlerle aydınlatıyor, kriminal süreçlerde kesin ve hızlı raporlama sağlıyoruz.
+                                {APP_CONFIG.HOME_PAGE_TEXT.HERO_SUBTITLE}
                             </p>
                         </div>
                     </div>
-
-                    {/* Nav link columns (Aynı satırda genişleyen linkler) */}
                     <div className="flex-1 grid grid-cols-2 md:grid-cols-3 gap-8">
                         {Object.entries(APP_CONFIG.FOOTER_LİNKS).map(([key, links]) => (
                             <div key={key}>
@@ -38,7 +31,6 @@ export default function Footer() {
                                 >
                                     {key === 'CORPORATE' ? 'KURUMSAL' : key === 'SERVICES' ? 'HİZMETLER' : 'YASAL'}
                                 </p>
-
                                 <ul className="space-y-3">
                                     {links.map((link) => (
                                         <li key={link.id}>
@@ -56,8 +48,6 @@ export default function Footer() {
                         ))}
                     </div>
                 </div>
-
-                {/* Bottom rule */}
                 <div style={{ borderColor: "#2d1410" }} className="border-t pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
                     <p style={{ color: "#5c3d30", fontSize: "0.78rem", letterSpacing: "0.08em" }}>
                         © {new Date().getFullYear()} {APP_CONFIG.FOOTER.RIGHTS}
@@ -69,10 +59,8 @@ export default function Footer() {
                     </p>
                 </div>
             </div>
-
             <div
                 style={{
-
                     height: "3px",
                     background: "linear-gradient(to right, #1a0a08, #b8860b, #d4a017, #b8860b, #1a0a08)",
                 }}
